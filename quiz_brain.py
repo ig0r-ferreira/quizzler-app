@@ -13,10 +13,10 @@ class QuizBrain:
         self.question_number += 1
 
         while True:
-            user_answer = input(f"Question {self.question_number}: {current_question.text} (True/False)?: ").lower()
+            user_answer = input(f"Question {self.question_number}: {current_question.text}\nTrue or False? ").lower()
             if user_answer in ("true", "false"):
                 break
-            print("Type only true or false.")
+            print("\033[1;31mType only true or false.\033[m")
 
         self.check_answer(user_answer, current_question.answer)
 
@@ -26,9 +26,8 @@ class QuizBrain:
     def check_answer(self, user_answer: str, correct_answer: str):
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
-            print("You're right!")
+            print("Correct!", end=" ")
         else:
-            print("You missed!")
+            print("Wrong!", end=" ")
 
-        print(f"The correct answer is: {correct_answer}.\n"
-              f"Your current score is: {self.score}/{self.question_number}.\n")
+        print(f"Current score: {self.score}/{self.question_number}.\n")
