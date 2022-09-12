@@ -1,3 +1,4 @@
+import art
 from random import shuffle
 from question_model import Question
 from data import question_data
@@ -10,6 +11,7 @@ def main() -> None:
 
     quiz = QuizBrain(question_bank)
 
+    print(art.LOGO)
     while quiz.still_has_questions():
         try:
             quiz.next_question()
