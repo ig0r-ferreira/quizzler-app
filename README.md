@@ -1,5 +1,6 @@
 # Quizzler App
 
-An object-oriented quiz app that contains 10 questions on random topics for the user to answer with True or False.
+A GUI quiz app that presents the user with 10 true or false questions about random topics taken from the 
+[Open Trivia DB API](https://opentdb.com/api_config.php).
 
-![quizzler-app](https://user-images.githubusercontent.com/35473390/189750142-9939357d-b510-4c48-82fd-052b430d77c4.gif)
+![Quizzler GUI](https://user-images.githubusercontent.com/35473390/190641518-5ecac0d0-6f48-4d47-9f04-5e9081ba7286.gif)
