@@ -12,7 +12,10 @@ class QuizBrain:
         self.question_number += 1
 
         while True:
-            user_answer = input(f"Question {self.question_number}: {current_question.text}\nTrue or False? ").lower()
+            user_answer = input(
+                f"Question {self.question_number}: {current_question.text}\n"
+                "True or False? "
+            ).lower()
             if user_answer in ("true", "false"):
                 break
             print("\033[1;31mType only true or false.\033[m")
